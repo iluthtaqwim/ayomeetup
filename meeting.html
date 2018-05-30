@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>AYOmeetup</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--Navbar-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">AYOmeetup</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div id="navbarNavDropdown" class="navbar-collapse collapse">
+           <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#">Meeting</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#">Meet up</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#">Coworking</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#">Learning</a>
+               </li>
+
+           </ul>
+           <form class="form-inline mr-auto my-0">
+             <div>
+               <input class="form-control form-control-sm mr-sm2 mb0" type="search" placeholder="cari lokasi,nama tempat.." aria-label="Search">
+             </div>
+             <button class="btn btn-outline-white btn-sm my-0" type="submit">Search</button>
+           </form>
+           <ul class="navbar-nav">
+               <li class="nav-item">
+                   <a class="nav-link" href="{{ url('/login') }}">Login</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="{{ url('/register') }}">Register</a>
+               </li>
+           </ul>
+       </div>
+    <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->

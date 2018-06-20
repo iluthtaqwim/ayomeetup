@@ -14,6 +14,10 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+    <!-- Include jQuery -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
 </head>
 
 <body>
@@ -138,8 +142,205 @@
     <!--/.Controls-->
 </div>
 <!--/.Carousel Wrapper-->
+<div class="container" style="padding-top:0.5%">
+  <div class="card-deck">
+
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-justified black" style="opacity:0.75" role="tablist">
+      <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab"> Meeting</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#panel2" role="tab"> Meetup</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#panel3" role="tab"> Coworking</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#panel4" role="tab"> Learning</a>
+      </li>
+  </ul>
+  <!-- Tab panels -->
+  <div class="tab-content">
+      <!--Panel 1-->
+      <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+        <!-- Material column sizing form -->
+<form style="padding:2%">
+    <!-- Grid row -->
+    <div class="form-row">
+        <!-- Grid column -->
+        <div class="col-8">
+            <!-- Material input -->
+            <div class="md-form">
+                <input type="text" class="form-control" placeholder="Wilayah, lokasi...">
+            </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-auto">
+            <!-- Material input -->
+            <div class="md-form">
+              <select class="selectpicker" data-width="40vh">
+                <option disabled selected>Kategori ruangan</option>
+                <option value="1">Hotel Room</option>
+                <option value="2">Cafe Room</option>
+            </select>
+
+            </div>
+        </div>
+        <!-- Grid column -->
+
+
+
+    </div>
+    <div class="form-row align-items-center">
+        <!-- Grid column -->
+        <div class="col-auto">
+            <!-- Material input -->
+            <div class="md-form">
+              <select class="selectpicker" data-width="auto">
+              <option disabled="" selected>Kapasitas</option>
+              <option value="2">5 - 10 orang</option>
+              <option value="3">11 - 15 orang</option>
+              <option value="4">16 - 20 orang</option>
+              <option value="3">21 - 30 orang</option>
+              <option value="3">31 - 50 orang</option>
+              <option value="3">51 - 100 orang</option>
+              <option value="3">+100 orang</option>
+            </select>
+
+            </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+          <div class="col-auto" style="margin:0 3% 0 3%">
+            <div class="md-form">
+              <input id="datepicker" type="text" class="form-control" placeholder="Tanggal Check-in">
+            </div>
+          </div>
+
+
+        <!-- Grid column -->
+        <div class="col-auto">
+            <!-- Material input -->
+            <div class="md-form">
+              <select class="selectpicker" data-width="auto">
+                                      <option disabled="">Choose city</option>
+                                      <option value="2">Foobar</option>
+                                      <option value="3">Is great</option>
+            </select>
+
+            </div>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-0">Submit</button>
+        </div>
+        <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+</form>
+
+            </div>
+      <!--/.Panel 1-->
+      <!--Panel 2-->
+      <div class="tab-pane fade" id="panel2" role="tabpanel">
+        <form style="padding:2%">
+            <!-- Grid row -->
+            <div class="form-row">
+                <!-- Grid column -->
+                <div class="col-8">
+                    <!-- Material input -->
+                    <div class="md-form">
+                        <input type="text" class="form-control" placeholder="Wilayah, lokasi...">
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-auto">
+                    <!-- Material input -->
+                    <div class="md-form">
+                      <select class="selectpicker" data-width="40vh">
+                        <option disabled selected>Kategori ruangan</option>
+                        <option value="1">Hotel Room</option>
+                        <option value="2">Cafe Room</option>
+                    </select>
+
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <div class="form-row align-items-center">
+                    <!-- Grid column -->
+                    <div class="col-auto">
+                        <!-- Material input -->
+                        <div class="md-form">
+                          <select class="selectpicker" data-width="auto">
+                          <option disabled="" selected>Kapasitas</option>
+                          <option value="2">5 - 10 orang</option>
+                          <option value="3">11 - 15 orang</option>
+                          <option value="4">16 - 20 orang</option>
+                          <option value="3">21 - 30 orang</option>
+                          <option value="3">31 - 50 orang</option>
+                          <option value="3">51 - 100 orang</option>
+                          <option value="3">+100 orang</option>
+                        </select>
+
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                      <div class="col-auto" style="margin:0 3% 0 3%">
+                        <div class="md-form">
+                          <input id="datepicker" type="text" class="form-control" placeholder="Tanggal Check-in">
+                        </div>
+                      </div>
+
+
+                    <!-- Grid column -->
+                    <div class="col-auto">
+                        <!-- Material input -->
+                        <div class="md-form">
+                          <select class="selectpicker" data-width="auto">
+                                                  <option disabled="">Choose city</option>
+                                                  <option value="2">Foobar</option>
+                                                  <option value="3">Is great</option>
+                        </select>
+
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-auto" style="float:right">
+                        <button type="submit" class="btn btn-primary mb-0">Submit</button>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </form>
+
+          </div>
+      <!--/.Panel 2-->
+      <!--Panel 3-->
+      <div class="tab-pane fade" id="panel4" role="tabpanel">
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+      </div>
+      <!--/.Panel 3-->
+  </div>
+  </div>
+</div>
 <div style="background-color: #F7E278">
   <div class="container" style="padding-top:7%">
+
+  <!-- Card deck -->
     <div class="card-deck">
 
       <!-- Card -->
@@ -396,7 +597,6 @@
             <p class="animated fadeIn text-muted">MDB Team</p>
         </div>
     </div>
-    <!-- /Start your project here-->
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
@@ -407,6 +607,15 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$( function() {
+  $( "#datepicker" ).datepicker();
+} );
+</script>
+
 </body>
 
 </html>

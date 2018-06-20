@@ -16,3 +16,6 @@
 body{
   background: #F7E278;
 }
+tr td li{
+  padding-bottom: 1em;
+}

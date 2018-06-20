@@ -14,6 +14,7 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-select.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,7 +41,7 @@
                    <a class="nav-link" href="#">Meeting</a>
                </li>
                <li class="nav-item">
-                   <a class="nav-link" href="#">Meet up</a>
+                   <a class="nav-link" href="meetup.html">Meet up</a>
                </li>
                <li class="nav-item">
                    <a class="nav-link" href="#">Coworking</a>
@@ -58,7 +59,7 @@
            </form>
            <ul class="navbar-nav">
                <li class="nav-item">
-                   <a class="nav-link" href="{{ url('/login') }}">Login</a>
+                   <a class="nav-link" href="login.html">Login</a>
                </li>
                <li class="nav-item">
                    <a class="nav-link" href="{{ url('/register') }}">Register</a>
@@ -69,3 +70,347 @@
 
 </nav>
 <!--/.Navbar-->
+<!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-2" data-slide-to="1"></li>
+        <li data-target="#carousel-example-2" data-slide-to="2"></li>
+        <li data-target="#" data-slide-to="3"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <div class="view" style="height:100vh">
+                <img class="d-block w-100" src="img/carousel/c1.jpg" alt="First slide">
+                <div class="mask rgba-black-strong"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Meeting Room</h3>
+              <p>Ruang nyaman bikin fokus</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view" style="height:100vh">
+                <img class="d-block w-100" src="img/carousel/c2.jpg" alt="Second slide">
+                <div class="mask rgba-black-strong"></div>
+            </div>
+            <div class="carousel-caption">
+                <h3 class="h3-responsive">Meet up Room</h3>
+                <p>Berkumpul, eratkan hubungan</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view" style="height:100vh">
+                <img class="d-block w-100" src="img/carousel/c3.jpg" alt="Third slide">
+                <div class="mask rgba-black-strong"></div>
+            <div class="carousel-caption">
+                <h3 class="h3-responsive">Ruang Mengajar</h3>
+                <p>Berbagi ilmu, tidak akan berkurang</p>
+            </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view" style="height:100vh">
+                <img class="d-block w-100" src="img/meeting/Ekologi.jpg" alt="Fourth slide">
+                <div class="mask rgba-black-strong"></div>
+            <div class="carousel-caption">
+                <h3 class="h3-responsive">Coworking Room</h3>
+                <p>Beda ruang, beda suasana</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+
+<div style="background-color: #F7E278">
+  <div class="container" style="padding-top:7%">
+    <div class="card-deck">
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/carousel/c2.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body">
+
+          <!--Title-->
+          <h4 class="card-title">Lokal Resto Jogja</h4>
+          <!--Text-->
+          <p class="card-text">Jl. Jembatan Merah NO.104C,Gejayan, Sleman, Yogyakarta</p>
+          <h5 class="card-subtitle">Rp 100.000/ jam</h5>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-dark btn-md">Read more</button>
+        </div>
+      <!-- Card -->
+    </div>
+
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="img/meeting/fave_hotel.JPEG" alt="Card image cap">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Fave Hotel</h4>
+        <!--Text-->
+        <p class="card-text">Jl. Kusumanegara No.91, Muja Muju, Umbulharjo, Yogyakarta</p>
+        <h5 class="card-subtitle">Rp 300.000/ jam</h5>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn btn-dark btn-md">Read more</button>
+      </div>
+    <!-- Card -->
+  </div>
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="img/meeting/neo+.JPEG" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Hotel Neo+ Yogyakarta</h4>
+      <!--Text-->
+      <p class="card-text">Jl. Mayjend Sutoyo No.52, Mantrijeron, Yogyakarta</p>
+      <h5 class="card-subtitle">Rp 1.000.000/ jam</h5>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-dark btn-md">Read more</button>
+    </div>
+  <!-- Card -->
+</div>
+
+  </div>
+  <!-- Card deck -->
+</div>
+  <div class="container" style="padding-top:7%">
+    <div class="card-deck">
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/meeting/mangkubumi.JPEG" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body">
+
+          <!--Title-->
+          <h4 class="card-title">Harper Mangkubumi</h4>
+          <!--Text-->
+          <p class="card-text">Jl. P.Mangkubumi No.52,Gowongan, Jetis, Yogyakarta</p>
+          <h5 class="card-subtitle">Rp 3.500.000/ jam</h5>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-dark btn-md">Read more</button>
+        </div>
+      <!-- Card -->
+    </div>
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="img/meeting/Ekologi.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Ekologi Coworking Space</h4>
+      <!--Text-->
+      <p class="card-text">Jl. Pandean Sari No.4, Condongcatur, Yogyakarta</p>
+      <h5 class="card-subtitle">Free</h5>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-dark btn-md">Read more</button>
+    </div>
+  <!-- Card -->
+</div>
+
+<!-- Card -->
+<div class="card mb-4">
+
+  <!--Card image-->
+  <div class="view overlay">
+    <img class="card-img-top" src="img/meeting/meeting1.jpg" alt="Card image cap">
+    <a href="#!">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!--Card content-->
+  <div class="card-body">
+
+    <!--Title-->
+    <h4 class="card-title">Ruang Cafe</h4>
+    <!--Text-->
+    <p class="card-text">Jl. Ringroad Utara Monjali, Ngaglik, Sariharjo, Sleman, Yogyakarta</p>
+    <h5 class="card-subtitle">Rp 250.000</h5>
+    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+    <button type="button" class="btn btn-dark btn-md">Read more</button>
+  </div>
+<!-- Card -->
+</div>
+
+
+
+  </div>
+  <!-- Card deck -->
+
+  <div class="container" style="padding-top:7%">
+    <div class="card-deck">
+
+      <!-- Card -->
+      <div class="card mb-4">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="img/meeting/creo.JPEG" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+        <!--Card content-->
+        <div class="card-body">
+
+          <!--Title-->
+          <h4 class="card-title">Creohouse</h4>
+          <!--Text-->
+          <p class="card-text">Gedung Kemang 15 Lt.3 Jl. Kemang Raya No. 15, Jakarta Selatan</p>
+          <h5 class="card-subtitle">Rp 8.000.000/ bulan</h5>
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-dark btn-md">Read more</button>
+        </div>
+      <!-- Card -->
+    </div>
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="img/meeting/ruangrapatjogja.jpg" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Kampung Duwet</h4>
+      <!--Text-->
+      <p class="card-text">Jl. Sambisari (300 meter selatan Lapangan Denggung), Sleman, Yogyakarta</p>
+      <h5 class="card-subtitle">-</h5>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-dark btn-md">Read more</button>
+    </div>
+  <!-- Card -->
+</div>
+
+<!-- Card -->
+<div class="card mb-4">
+
+  <!--Card image-->
+  <div class="view overlay">
+    <img class="card-img-top" src="img/meeting/wahidhasyim.JPEG" alt="Card image cap">
+    <a href="#!">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!--Card content-->
+  <div class="card-body">
+
+    <!--Title-->
+    <h4 class="card-title">Cipta Hotel Wahid Hasyim</h4>
+    <!--Text-->
+    <p class="card-text">Jl. KH Wahid Hasyim No.53, Gondangdia, Menteng, Jakarta</p>
+    <h5 class="card-subtitle">Rp 250.000</h5>
+    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+    <button type="button" class="btn btn-dark btn-md">Read more</button>
+  </div>
+<!-- Card -->
+</div>
+
+  </div>
+  <!-- Card deck -->
+
+   </div>
+
+    <!-- Start your project here-->
+    <div style="height: 100vh">
+        <div class="flex-center flex-column">
+            <h1 class="animated fadeIn mb-4">Material Design for Bootstrap</h1>
+
+            <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
+
+            <p class="animated fadeIn text-muted">MDB Team</p>
+        </div>
+    </div>
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.js"></script>
+
+</body>
+
+</html>

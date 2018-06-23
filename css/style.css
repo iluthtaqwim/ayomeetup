@@ -19,3 +19,7 @@ body{
 tr td li{
   padding-bottom: 1em;
 }
+
+div form p{
+  align-content: center;
+}

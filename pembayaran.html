@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pembayaran</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+    <!-- Include jQuery -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">AYOmeetup</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div id="navbarNavDropdown" class="navbar-collapse collapse">
+           <ul class="navbar-nav mr-auto">
+               <li class="nav-item disabled">
+                   <a class="nav-link">Pemesanan</a>
+               </li>
+               <li class="nav-item disabled">
+                   <a class="nav-link"> > </a>
+               </li>
+               <li class="nav-item active disabled">
+                   <a class="nav-link" href="#">Pembayaran</a>
+               </li>
+               <li class="nav-item disabled">
+                   <a class="nav-link"> > </a>
+               </li>
+               <li class="nav-item disabled">
+                   <a class="nav-link" href="#">Detail Resi</a>
+               </li>
+           </ul>
+
+           <ul class="navbar-nav">
+               <li class="nav-item">
+                   <a class="nav-link" href="login.html">Login</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="registrasi">Register</a>
+               </li>
+           </ul>
+       </div>
+    <!-- Collapsible content -->
+
+    </nav>
+    <!--/.Navbar-->
+
+<div class="container" style="margin-top:7%">
+  <div class="row">
+    <div class="col-md-6">
+      <form>
+        <div class="md-form" style="padding-bottom:5%">
+          <div class="input-group">
+            <input type="text" id="materialFormCardNameEx" class="form-control">
+            <div class="input-group-addon">
+              <i class="fa fa-cc-mastercard"></i>
+              <span class="fa fa-credit-card"></span>
+            </div>
+            <label for="materialFormCardNameEx" class="font-weight-light">Nomor Rekening</label>
+          </div>
+        </div>
+        <div class="md-form" style="padding-bottom:5%">
+          <label for="tglKadaluarsa" class="font-weight-light">Tanggal Kadaluarsa (MM/YY)</label>
+          <input type="text" class="form-control" id="tglKadaluarsa">
+        </div>
+        <div class="md-form" style="padding-bottom:5%">
+          <label class="font-weight-light">CV Code</label>
+          <input type="number" id="cvc" class="form-control">
+        </div>
+      </form>
+      <a href="detailresi.html"><button type="submit" class="btn btn-dark">Pembayaran</button></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card" style="margin-bottom: 5%">
+        <img src="img/meeting/neo+.JPEG" class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Hotel Neo+ Yogyakarta</h4>
+          <p class="card-text">Jl. Mayjend Sutoyo No.52, Mantrijeron, Yogyakarta</p>
+          <!--Text-->
+          <div class="table-responsive">
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Check-in</th>
+                  <th scope="col">Kegiatan</th>
+                  <th scope="col">Kapasitas</th>
+                  <th scope="col">Kategori</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 Juli 2018</td>
+                  <td>Meeting</td>
+                  <td>21-30 orang</td>
+                  <td>Hotel Room</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table">
+              <tr>
+                <th>Total Pembayaran</th>
+                <td>3 Jam x Rp 1.000.000 </td>
+                <td> <b>Rp 3.000.000</b></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="page-footer font-small stylish-color-dark ">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="#"> AYOmeetup.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>AYOmeetup</title>
+    <title>Room Detail</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -18,8 +18,12 @@
     <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/product_styles.css">
     <link rel="stylesheet" type="text/css" href="css/product_responsive.css">
-    <link rel="stylesheet" href="css/select.min.css">
-    <link rel="stylesheet" href="css/angular-material.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+    <!-- Include jQuery -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
 </head>
 
 <body>
@@ -28,7 +32,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
 
     <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">AYOmeetup</a>
+    <a class="navbar-brand" href="index.html">AYOmeetup</a>
 
     <!-- Collapse button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
@@ -166,42 +170,89 @@
               </div>
             </div>
           </div>
+          <div class="">
+            <form style="padding:2%">
+                <!-- Grid row -->
+                <div class="form-row">
+
+                    <!-- Grid column -->
+                    <div class="col-auto">
+                        <!-- Material input -->
+                        <div class="md-form">
+                          <select class="selectpicker" data-width="auto">
+                          <option disabled selected>Kapasitas</option>
+                          <option value="2">5 - 10 orang</option>
+                          <option value="3">11 - 15 orang</option>
+                          <option value="4">16 - 20 orang</option>
+                          <option value="3">21 - 30 orang</option>
+                          <option value="3">31 - 50 orang</option>
+                          <option value="3">51 - 100 orang</option>
+                          <option value="3">+100 orang</option>
+                        </select>
+
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                      <div class="col-auto" style="margin:0 3% 0 3%">
+                        <div class="md-form">
+                          <input id="datepicker" type="text" class="form-control" placeholder="Tanggal Check-in">
+                        </div>
+                      </div>
+
+
+                    <!-- Grid column -->
+                    <div class="col-auto">
+                        <!-- Material input -->
+                        <div class="md-form">
+                          <select class="selectpicker" data-width="auto">
+                                                  <option disabled selected>Durasi</option>
+                                                  <option value="2">1 Jam</option>
+                                                  <option value="3">2 Jam</option>
+                                                  <option value="4">3 Jam</option>
+                                                  <option value="5">4 Jam</option>
+                                                  <option value="6">5 Jam</option>
+                                                  <option value="7">6 Jam</option>
+
+                        </select>
+
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-auto mx-auto">
+                        <a href="pemesanan.html"><button type="submit" class="btn btn-dark mb-0">Booking</button></a>
+                    </div>
+                    <!-- Grid column -->
+                  </div>
+
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </form>
+          </div>
 		</div>
 	</div>
 </div>
-    <!-- Start your project here-->
-    <div style="height: 100vh">
 
 
 
-
-    </div>
-    <!-- /Start your project here-->
-</div>
-<script type="text/javascript">
-function myMap() {
-var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-};
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$( function() {
+$( "#datepicker" ).datepicker();
+} );
 </script>
 
-    <!-- JQuery -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="plugins/greensock/TweenMax.min.js"></script>
-    <script src="plugins/greensock/TimelineMax.min.js"></script>
-    <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
-    <script src="plugins/greensock/animation.gsap.min.js"></script>
-    <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
-    <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-    <script src="plugins/easing/easing.js"></script>
-    <script src="js/product_custom.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0KNqifcQ5yK_7Sn-EqZYfkGhAwx_LJ4E&callback=myMap"></script>
-    <script src="js/select.min.js"></script>
-    <script src="js/angular-material.js"></script>
   </body>
 </html>

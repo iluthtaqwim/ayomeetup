@@ -11,10 +11,12 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap-select.css" rel="stylesheet">
+      <link href="css/bootstrap-select.css" rel="stylesheet">
     <!-- Include jQuery -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- CSS Files -->
     </head>
 
     <body>
@@ -46,12 +48,22 @@
            </ul>
 
            <ul class="navbar-nav">
-               <li class="nav-item">
-                   <a class="nav-link" href="login.html">Login</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="registrasi">Register</a>
-               </li>
+             <li class="dropdown nav-item">
+               <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                 <i class="fa fa-user"></i> Iluth
+               </a>
+               <div class="dropdown-menu dropdown-menu-right">
+                 <a href="profilUser.html" class="dropdown-item">
+                   <i class="fa fa-user-circle" style="font-size: 24px"></i> Profil
+                 </a>
+                 <a href="riwayatPemesanan.html" class="dropdown-item">
+                   <i class="fa fa-book" style="font-size: 24px"></i> Booking History
+                 </a>
+                 <a href="login.html" class="dropdown-item">
+                   <i class="fa fa-sign-out" style="font-size: 24px"></i>Log Out
+                 </a>
+               </div>
+             </li>
            </ul>
        </div>
     <!-- Collapsible content -->
@@ -76,8 +88,8 @@
           <input type="email" id="email" class="form-control">
         </div>
         <p style="font-size:10px">Dengan meng klik tombol dibawah, Anda mengerti dan menyetujui <a href="#">Kebijakan Privasi</a> AYOmeetup.</p>
-        <button type="submit" class="btn btn-dark">Pembayaran</button>
       </form>
+      <a href="pembayaran.html"><button type="submit" class="btn btn-dark">Pembayaran</button></a> 
     </div>
     <div class="col-md-6">
       <div class="card" style="margin-bottom: 5%">
@@ -119,7 +131,15 @@
     </div>
   </div>
 </div>
+<footer class="page-footer font-small stylish-color-dark ">
 
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="#"> AYOmeetup.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
 
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>

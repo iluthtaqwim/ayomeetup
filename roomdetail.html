@@ -83,35 +83,54 @@
 
 <div style="background-color: #F7E278">
   <div class="single_product">
+
 		<div class="container">
       <!-- Grid row -->
       <div class="row">
         <!-- Grid column -->
         <div class="col-md-6">
-            <img src="img/meeting/neo+.JPEG" class="img-fluid z-depth-2 img-thumbnail" alt="Responsive image">
+            <img id="myImg" src="img/meeting/neo+.JPEG" class="img-fluid z-depth-2 img-thumbnail" alt="Responsive image">
             <div class="row" style="margin-top:3rem">
-
+              <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="img01" src="img/meeting/neo+.JPEG">
+                  <button type="button" class="close" name="button"></button>
+                </div>
                 <!-- Grid column -->
                 <div class="col-md-4">
 
-                    <img src="img/meeting/neo+1.JPEG" class="img-fluid z-depth-2 img-thumbnail" alt="Responsive image">
-
+                    <img id="myImg1" src="img/meeting/neo+1.JPEG" class="img-fluid z-depth-2 img-thumbnail" alt="Responsive image">
+                    <!-- The Modal -->
+                      <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img02" src="img/meeting/neo+1.JPEG">
+                        <button type="button" class="close" name="button"></button>
+                      </div>
                 </div>
                 <!-- Grid column -->
 
                 <!-- Grid column -->
                 <div class="col-md-4">
 
-                    <img src="img/meeting/neo+2.JPEG" class="img-fluid z-depth-2 img-thumbnail" alt="Responsive image">
-
+                    <img id="myImg2" src="img/meeting/neo+2.JPEG" class="img-fluid z-depth-2 img-thumbnail" alt="Responsive image">
+                    <div id="myModal2" class="modal">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" id="img03" src="img/meeting/neo+2.JPEG">
+                      <button type="button" class="close" name="button"></button>
+                    </div>
                 </div>
                 <!-- Grid column -->
 
                 <!-- Grid column -->
                 <div class="col-md-4">
 
-                    <img src="img/meeting/neo+3.JPEG" class="img-fluid z-depth-2 img-thumbnail" alt="Responsive image">
-
+                    <img id="myImg3" src="img/meeting/neo+3.JPEG" class="img-fluid z-depth-2 img-thumbnail" alt="Responsive image">
+                    <div id="myModal3" class="modal">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" id="img04" src="img/meeting/neo+3.JPEG">
+                      <button type="button" class="close" name="button"></button>
+                    </div>
                 </div>
                 <div id="map" class="row" style="margin-top: 3rem;margin-left: 3%;width:94%;height:200px;"></div>
               </div>
@@ -342,6 +361,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0KNqifcQ5yK_7Sn-EqZYfkGh
 <script type="text/javascript" src="js/bootstrap-select.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/imgpopup.js"></script>
 <script>
 $( function() {
 $( "#datepicker" ).datepicker();
